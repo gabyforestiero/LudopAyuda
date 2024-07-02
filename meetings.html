@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meetings.css">
+    <title>Buscar Reuniones - LudopAyuda</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>LudopAyuda</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="meetings.html">Reuniones</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Chat en Vivo</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="search">
+                <h2>Buscar Reuniones Activas</h2>
+                <form id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Buscar reuniones...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+            <section class="meetings">
+                <h2>Reuniones Activas</h2>
+                <ul id="meetingsList">
+                </ul>
+            </section>
+        </div>
+    </main>
+   
+    <!-- Modal de Confirmación -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Confirmar Agendamiento</h2>
+            <p>¿Está seguro de que desea agendar esta reunión?</p>
+            <button id="confirmButton">Confirmar</button>
+            <button id="cancelButton">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="meetings.js"></script>
+</body>
+</html>
