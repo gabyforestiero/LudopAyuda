@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -21,7 +20,7 @@ header {
     padding: 10px 20px;
 }
 
-span{color:#ff0054}
+span { color: #ff0054 }
 
 nav {
     display: flex;
@@ -171,6 +170,13 @@ nav {
 
 .input-container button:hover {
     background-color: #0056b3;
+}
+
+.statistics {
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
