@@ -23,29 +23,28 @@ function enviarMensaje() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-
-    const datos = {
-      labels: ['Menores de 18', '18-25', '26-35', '36-45', 'Más de 45'],
+  const datos = {
+      labels: ['Apuestas Deportivas', 'Casinos en Línea', 'Juegos de Cartas', 'Máquinas Tragamonedas', 'Loterías'],
       datasets: [{
-        label: 'Edades',
-        data: [15, 30, 45, 25, 10], 
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)'
-        ],
-        borderWidth: 1
+          label: 'Motivos de Consulta',
+          data: [40, 25, 15, 10, 10],
+          backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)'
+          ],
+          borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)'
+          ],
+          borderWidth: 1
       }]
-    };
+  };
 
     const config = {
       type: 'bar',

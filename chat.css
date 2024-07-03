@@ -8,6 +8,10 @@ body {
     min-height: 100vh;
 }
 
+.center{
+    text-align: center;
+}
+
 .btn {
     padding: 10px;
     background-color: #FF007F;
