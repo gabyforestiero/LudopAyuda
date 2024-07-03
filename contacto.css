@@ -8,6 +8,21 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
+
+  .btn {
+    padding: 10px;
+    background-color: #FF007F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #e6006b;
+}
+
   
   .container {
     display: flex;
