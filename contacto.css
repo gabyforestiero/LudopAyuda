@@ -26,6 +26,8 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  span{color:#ff0054}
   
   .logo h1 {
     margin: 0;

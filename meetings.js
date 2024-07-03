@@ -1,10 +1,9 @@
-// Simulación de datos de reuniones activas (puedes cambiar esto por tu lógica real)
 const meetingsData = [
     { id: 1, name: 'Reunión 1', date: '2024-07-01', active: true, live: true },
     { id: 2, name: 'Reunión 2', date: '2024-07-02', active: true, live: false },
     { id: 3, name: 'Reunión 3', date: '2024-07-03', active: true, live: false },
     { id: 4, name: 'Reunión 4', date: '2024-07-04', active: true, live: false },
-    { id: 5, name: 'Reunión 4', date: '2024-07-04', active: true, live: false },
+    { id: 5, name: 'Reunión 5', date: '2024-07-04', active: true, live: false },
 ];
 
 const searchForm = document.getElementById('searchForm');
@@ -17,9 +16,8 @@ const cancelButton = document.getElementById('cancelButton');
 let currentMeetingId = null;
 let currentMeetingLive = false;
 
-// Función para mostrar las reuniones activas
 function showActiveMeetings(meetings) {
-    meetingsList.innerHTML = ''; // Limpiar la lista antes de mostrar las reuniones
+    meetingsList.innerHTML = '';
 
     meetings.forEach(meeting => {
         if (meeting.active) {
@@ -37,7 +35,7 @@ function showActiveMeetings(meetings) {
             if (meeting.live) {
                 const meetingTag = document.createElement('span');
                 meetingTag.classList.add('meeting-tag', 'live');
-                meetingTag.textContent = 'En Vivo';
+                meetingTag.textContent = 'EN VIVO';
                 meetingInfo.appendChild(meetingTag);
             }
 
@@ -74,12 +72,11 @@ function hideModal() {
     confirmationModal.style.display = 'none';
 }
 
-// Mostrar todas las reuniones activas al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     showActiveMeetings(meetingsData);
 });
 
-// Manejar la búsqueda de reuniones
+
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -100,7 +97,6 @@ confirmButton.addEventListener('click', () => {
     hideModal();
 });
 
-// Ocultar el modal si se hace clic fuera de él
 window.addEventListener('click', (event) => {
     if (event.target == confirmationModal) {
         hideModal();
