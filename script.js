@@ -63,3 +63,28 @@ document.addEventListener('DOMContentLoaded', function() {
       config
     );
 });
+
+let slideIndex = 0;
+showSlides(slideIndex);
+
+function showSlides(n) {
+  let i;
+  const slides = document.querySelectorAll(".slide");
+
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "flex";
+}
+
+document.querySelector(".prev").addEventListener("click", function() {
+  showSlides(--slideIndex);
+});
+
+document.querySelector(".next").addEventListener("click", function() {
+  showSlides(++slideIndex);
+});
